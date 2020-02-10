@@ -1,0 +1,19 @@
+{
+  "name": "threejs",
+  "version": "1.0.0",
+  "description": "Example basic with Three.js",
+  "main": "index.html",
+  "scripts": {
+    "serve": "http-server . -p 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chalo2812/threejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chalo2812/threejs/issues"
+  },
+  "homepage": "https://github.com/chalo2812/threejs#readme"
+}
