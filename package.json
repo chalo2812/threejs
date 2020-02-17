@@ -4,7 +4,8 @@
   "description": "Example basic with Three.js",
   "main": "index.html",
   "scripts": {
-    "serve": "http-server . -p 8000"
+    "serve": "http-server . -p 8000",
+    "hotfix":"browser-sync start -s -f . --no-notify --host 127.0.0.1 --port 9000"
   },
   "repository": {
     "type": "git",

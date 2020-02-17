@@ -8,7 +8,7 @@ function init() {
     renderer.setClearColor(0xdfdfdf, 1.0);
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.shadowMap.enabled = true;
-    geometry = new THREE.BoxGeometry( 0.2, 0.2, 0.2 );
+    geometry = new THREE.BoxGeometry( 5.2, 5.2, 5.2 );
     material = new THREE.MeshNormalMaterial();
 
 	mesh = new THREE.Mesh( geometry, material );
@@ -20,14 +20,12 @@ function init() {
     camera.position.x = 15;
     camera.position.y = 16;
     camera.position.z = 13;
-    var box = new THREE.BoxGeometry(3,2,3);
-    var material = new THREE.MeshBasicMaterial({color: 0xff0000})
-    var cube = new THREE.Mesh(box, material);
-    scene.add(cube);
-    var loader = new THREE.ColladaLoader();
+
+    /*var loader = new THREE.ColladaLoader();
     loader.load('../assets/model.dae', function (collada) {
       scene.add(collada.scene);
-    } ); 
+    } ); */
+    castShadow = true
     camera.lookAt(scene.position);    
     document.body.appendChild(renderer.domElement);   
     render();
